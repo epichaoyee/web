@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <header>
+       <meta charset="UTF-8">
+       <script src="randominteger.js"></script>
+    </header>
+    <body>
+        <div id="nav"> </div>
+        <script>
+            document.write("<h1>i want to play gta6 now </h1>");
+            document.write("<p>hello world</p>");
+            console.log(navigator.language);
+            console.log(navigator.platform);
+            document.getElementById("nav").innerHTML = "<p>Language: " + navigator.language + "</p>" +
+            "<p>Platform: " + navigator.platform + "</p>";
+           var key=randomint();
+            var answer=[];
+            for(var i=0;i<10;i++){
+                answer[i]=prompt("enter your number(from 1 to 100)");
+                if(answer[i]>key){alert("your previous answer "+answer.join(",")+" ,wrong,this number is too high");}
+                else if(answer[i]<key){alert("your previous answer "+answer.join(",")+" ,this number is wrong,too low");}
+                else {alert("right!");break;}
+            }
+            document.write(key);
+        </script>
+        
+    </body>
+</html>
